@@ -14,15 +14,19 @@ import java.io.IOException;
 
 public class drawTri extends PApplet {
 
+/*
+    drawTri
+*/
+
 public void setup() {
     
-     
+    // pixelDensity(2);
 }
 
 public void draw() {
     background(255);
 
-    sphere_3D(width*2, 255);
+    // sphere_3D(width*2, 255);
     drawTri(15, 10);
 }
 
@@ -48,7 +52,7 @@ public void sphere_3D(int count, int clr) {
 public void mouseClicked() {
     saveFrame("sketch.png");
 }
-  public void settings() {  size(400, 400);  pixelDensity(2); }
+  public void settings() {  size(400, 400); }
   static public void main(String[] passedArgs) {
     String[] appletArgs = new String[] { "drawTri" };
     if (passedArgs != null) {

@@ -22,7 +22,7 @@ float count = 8;    // # x #
 
 public void setup() {
     
-    // pixelDensity(2);
+    
     frameRate(1);
 }
 
@@ -87,7 +87,15 @@ public void drawPixel(int pixel, int x, int y, int inc, int tX, int tY, int sX, 
         rect(x, y, inc, inc);
     popMatrix();
 }
-  public void settings() {  size(600, 600); }
+
+int picNum = 1;
+public void mouseClicked() {
+    String picTitle = "pixelTiles";
+    save("proc-" + picTitle + picNum + ".png");
+    picNum++;
+    //exit();
+}
+  public void settings() {  size(600, 600);  pixelDensity(2); }
   static public void main(String[] passedArgs) {
     String[] appletArgs = new String[] { "pixelTiles" };
     if (passedArgs != null) {

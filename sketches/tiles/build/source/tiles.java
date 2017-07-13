@@ -20,7 +20,7 @@ public class tiles extends PApplet {
 
 public void setup() {
     
-    // pixelDensity(2);
+    
     frameRate(1);
 }
 
@@ -95,7 +95,16 @@ public void drawTri(int x, int y, float inc, int type, int tX, int tY, int sX, i
         }
     popMatrix();
 }
-  public void settings() {  size(500, 500); }
+
+// Save image on click
+    int picNum = 1;
+    public void mouseClicked() {
+        String picTitle = "tiles";
+        save("proc-" + picTitle + picNum + ".png");
+        picNum++;
+        //exit();
+    }
+  public void settings() {  size(500, 500);  pixelDensity(2); }
   static public void main(String[] passedArgs) {
     String[] appletArgs = new String[] { "tiles" };
     if (passedArgs != null) {

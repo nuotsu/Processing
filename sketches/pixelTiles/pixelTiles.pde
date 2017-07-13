@@ -6,7 +6,7 @@ float count = 8;    // # x #
 
 void setup() {
     size(600, 600);
-    // pixelDensity(2);
+    pixelDensity(2);
     frameRate(1);
 }
 

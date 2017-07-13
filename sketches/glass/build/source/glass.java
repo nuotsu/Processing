@@ -15,13 +15,13 @@ import java.io.IOException;
 public class glass extends PApplet {
 
 /*
-    Spokes
+    glass
 */
 
 public void setup() {
     
-    
-    // frameRate(10);
+    //pixelDensity(2);
+    frameRate(10);
 }
 
 int inc = width/10; // 10 * 10
@@ -54,7 +54,7 @@ public void draw() {
         }
     }
 }
-  public void settings() {  size(400, 400);  pixelDensity(2); }
+  public void settings() {  size(400, 400); }
   static public void main(String[] passedArgs) {
     String[] appletArgs = new String[] { "glass" };
     if (passedArgs != null) {

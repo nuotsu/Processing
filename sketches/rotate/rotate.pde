@@ -4,7 +4,7 @@
 
 void setup() {
     size(400, 400);
-    pixelDensity(2);
+    //pixelDensity(2);
 }
 
 void draw() {

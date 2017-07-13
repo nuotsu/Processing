@@ -15,7 +15,7 @@ import java.io.IOException;
 public class cop extends PApplet {
 
 /*
-    Circle of Peace
+    cop
 */
 
 PShape cop;
@@ -23,7 +23,7 @@ int cop_size = 250;
 
 public void setup() {
     
-    
+    // pixelDensity(2);
 
     cop = loadShape("cop.svg");
     cop.translate(-width/2, -height/2);
@@ -34,9 +34,9 @@ public void draw() {
 
     cop.disableStyle();
     shape(cop, width/2, height/2, cop_size, cop_size);
-    cop.rotate(0.001f);
+    cop.rotate(0.002f);
 }
-  public void settings() {  size(500, 500, P2D);  pixelDensity(2); }
+  public void settings() {  size(500, 500, P2D); }
   static public void main(String[] passedArgs) {
     String[] appletArgs = new String[] { "cop" };
     if (passedArgs != null) {

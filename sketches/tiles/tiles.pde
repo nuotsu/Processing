@@ -4,7 +4,7 @@
 
 void setup() {
     size(500, 500);
-    // pixelDensity(2);
+    pixelDensity(2);
     frameRate(1);
 }
 
@@ -79,3 +79,12 @@ void drawTri(int x, int y, float inc, int type, int tX, int tY, int sX, int sY) 
         }
     popMatrix();
 }
+
+// Save image on click
+    int picNum = 1;
+    void mouseClicked() {
+        String picTitle = "tiles";
+        save("proc-" + picTitle + picNum + ".png");
+        picNum++;
+        //exit();
+    }

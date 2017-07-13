@@ -20,7 +20,7 @@ public class rotate extends PApplet {
 
 public void setup() {
     
-    
+    //pixelDensity(2);
 }
 
 public void draw() {
@@ -50,7 +50,7 @@ public void shell() {
         popMatrix();
     }
 }
-  public void settings() {  size(400, 400);  pixelDensity(2); }
+  public void settings() {  size(400, 400); }
   static public void main(String[] passedArgs) {
     String[] appletArgs = new String[] { "rotate" };
     if (passedArgs != null) {
