@@ -6,7 +6,7 @@ float count = 8;    // # x #
 
 void setup() {
     size(600, 600);
-    pixelDensity(2);
+    //pixelDensity(2);
     frameRate(1);
 }
 
@@ -71,3 +71,12 @@ void drawPixel(int pixel, int x, int y, int inc, int tX, int tY, int sX, int sY)
         rect(x, y, inc, inc);
     popMatrix();
 }
+
+// Save image on click
+    int picNum = 1;
+    void mouseClicked() {
+        String picTitle = "pixelTiles";
+        save("proc-" + picTitle + picNum + ".png");
+        picNum++;
+        //exit();
+    }

@@ -4,7 +4,7 @@
 
 void setup() {
     size(500, 500);
-    pixelDensity(2);
+    //pixelDensity(2);
     frameRate(1);
 }
 
