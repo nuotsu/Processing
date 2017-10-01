@@ -12,9 +12,9 @@ void draw() {
 }
 
 // Save image on click
+    String picTitle = "template";   // <-- change title
     int picNum = 1;
     void mouseClicked() {
-        String picTitle = "pixelTiles";
         save("proc-" + picTitle + "-" + picNum + ".png");
         picNum++;
         //exit();

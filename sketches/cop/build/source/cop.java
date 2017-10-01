@@ -25,7 +25,7 @@ public void setup() {
     
     // pixelDensity(2);
 
-    cop = loadShape("cop.svg");
+    cop = loadShape("data/cop.svg");
     cop.translate(-width/2, -height/2);
 }
 

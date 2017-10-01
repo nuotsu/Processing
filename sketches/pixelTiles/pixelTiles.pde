@@ -73,9 +73,9 @@ void drawPixel(int pixel, int x, int y, int inc, int tX, int tY, int sX, int sY)
 }
 
 // Save image on click
+    String picTitle = "pixelTiles";
     int picNum = 1;
     void mouseClicked() {
-        String picTitle = "pixelTiles";
         save("proc-" + picTitle + picNum + ".png");
         picNum++;
         //exit();
