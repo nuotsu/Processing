@@ -23,6 +23,7 @@ public class capture extends PApplet {
 
 Capture video;
 
+
 int gridSize = 10;
 int col, row;
 
@@ -79,7 +80,7 @@ public void draw() {
         picNum++;
         //exit();
     }
-  public void settings() {  size(320, 240);  pixelDensity(2); }
+  public void settings() {  size(1280, 800);  pixelDensity(2); }
   static public void main(String[] passedArgs) {
     String[] appletArgs = new String[] { "capture" };
     if (passedArgs != null) {

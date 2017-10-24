@@ -5,11 +5,12 @@
 import processing.video.*;
 Capture video;
 
+
 int gridSize = 10;
 int col, row;
 
 void setup() {
-    size(320, 240);
+    size(1280, 800);
     background(0);
     pixelDensity(2);
 

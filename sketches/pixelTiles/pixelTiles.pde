@@ -6,7 +6,7 @@ float count = 8;    // # x #
 
 void setup() {
     size(600, 600);
-    //pixelDensity(2);
+    //(displayDensity());
     frameRate(1);
 }
 
@@ -33,18 +33,10 @@ void pixelate(int tX, int tY, float scl) {
             translate(width * (1 - shrink)/2, height * (1 - shrink)/2);
             scale(shrink);
             // Complexity
-                if (mouseX > width * 3/4 && mouseX < width) {
-                    inc = 15;
-                }
-                if (mouseX > width/2 && mouseX < width * 3/4) {
-                    inc = 30;
-                }
-                if (mouseX > width/4 && mouseX < width/2) {
-                    inc = 60;
-                }
-                if (mouseX > 0 && mouseX < width/4) {
-                    inc = 120;
-                }
+                if (mouseX > width * 3/4 && mouseX < width) inc = 15;
+                if (mouseX > width/2 && mouseX < width * 3/4) inc = 30;
+                if (mouseX > width/4 && mouseX < width/2) inc = 60;
+                if (mouseX > 0 && mouseX < width/4) inc = 120;
 
             for (int y = 0; y < height/2; y += inc) {
                 for (int x = 0; x < width/2; x += inc) {
@@ -63,11 +55,9 @@ void drawPixel(int pixel, int x, int y, int inc, int tX, int tY, int sX, int sY)
     pushMatrix();
         translate(tX * width, tY * height);
         scale(sX, sY);
-        if (pixel == 1) {
-            fill(0);
-        } else {
-            fill(255);
-        }
+        //if (pixel == 2) fill(196);
+        if (pixel == 1) fill(0);
+        else fill(255);
         rect(x, y, inc, inc);
     popMatrix();
 }
