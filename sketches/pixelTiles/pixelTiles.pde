@@ -6,7 +6,7 @@ float count = 8;    // # x #
 
 void setup() {
     size(600, 600);
-    //(displayDensity());
+    //pixelDensity(displayDensity());
     frameRate(1);
 }
 
@@ -15,11 +15,10 @@ void draw() {
 
     noStroke();
 
-    for (int y = 0; y < count; y++) {
+    for (int y = 0; y < count; y++)
         for (int x = 0; x < count; x++) {
             pixelate(x, y, 1/count);
         }
-    }
 }
 
 int inc = 60;

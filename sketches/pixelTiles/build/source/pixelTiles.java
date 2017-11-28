@@ -23,7 +23,7 @@ float count = 8;    // # x #
 public void setup() {
     
     
-    frameRate(1);
+    frameRate(0.5f);
 }
 
 public void draw() {
@@ -31,11 +31,10 @@ public void draw() {
 
     noStroke();
 
-    for (int y = 0; y < count; y++) {
+    for (int y = 0; y < count; y++)
         for (int x = 0; x < count; x++) {
             pixelate(x, y, 1/count);
         }
-    }
 }
 
 int inc = 60;
