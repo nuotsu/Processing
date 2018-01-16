@@ -23,7 +23,7 @@ float count = 8;    // # x #
 public void setup() {
     
     
-    frameRate(0.5f);
+    frameRate(1);
 }
 
 public void draw() {

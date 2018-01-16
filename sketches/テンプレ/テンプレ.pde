@@ -3,8 +3,8 @@
 */
 
 void setup() {
+    pixelDensity(displayDensity());
     size(400, 400);
-    pixelDensity(2);
 }
 
 void draw() {
@@ -12,7 +12,7 @@ void draw() {
 }
 
 // Save image on click
-    String picTitle = "template";   // <-- change title
+    String picTitle = "テンプレ";   // <-- change title
     int picNum = 1;
     void mouseClicked() {
         save("proc-" + picTitle + "-" + picNum + ".png");
